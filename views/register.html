@@ -1,0 +1,102 @@
+    <div class="single-container register-screen animated fadeInDown">
+        <section class="sign-widget-title">
+            <h1>Royal Dashboard</h1>
+            <h4>Register Page</h4>
+        </section>
+        <section class="sign-widget">
+            <header>
+                <h4>Create new <b>Admin</b> account</h4>
+            </header>
+            <div class="body">
+                <form novalidate method="get" action="index.html" class="no-margin">
+                    <fieldset>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-info-circle"></i>
+                                </span>
+                                <input ng-model="fullname"
+                                       type="fullname" 
+                                       placeholder="Full name" 
+                                       class="form-control" 
+                                       id="fullname"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <input ng-model="email"
+                                       type="email" 
+                                       placeholder="Email" 
+                                       class="form-control" 
+                                       id="email"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input ng-model="username"
+                                       type="username" 
+                                       placeholder="Username" 
+                                       class="form-control" 
+                                       id="username"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                                <input ng-model="password"
+                                       type="password" 
+                                       placeholder="Password" 
+                                       class="form-control" 
+                                       id="password"
+                                       required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-actions">
+                        <button class="btn btn-block btn-primary" type="button" ng-click="trySignup()">
+                            <span class="fa-icon-circle">
+                                <i class="fa fa-sign-in"></i>
+                            </span>
+                            <small class="l-mar-5">Sign up</small>
+                        </button>
+                        <span class="terms">
+                            <input type="checkbox"/>
+                            I accept the
+                            <a href="#">Terms and Conditions</a>
+                        </span>
+                        <span class="login">
+                            Already have an account?
+                            <a href="#" ng-click="goToLogin()">Sign In</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <div class="twitter-login">
+                    <a href="#" ng-click="trySignup()">
+                        <span>
+                            <i class="fa fa-twitter"></i><span class="l-mar-5">Sign up with Twitter</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="facebook-login">
+                    <a href="#" ng-click="trySignup()">
+                        <span>
+                            <i class="fa fa-facebook-official"></i><span class="l-mar-5">Sign up with Facebook</span>
+                        </span>
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </div>

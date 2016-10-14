@@ -1,0 +1,68 @@
+<nav id="sidebar-nav" class="sidebar-nav">
+    <div id="sidebar-wrapper" class="sidebar-wrapper" data-background="default">
+        <nav id="sidebar-nav" class="sidebar-nav">
+            <ul class="side-nav-top nav">
+                <li class="sidebar-nav-logo">
+                    <component>sidebar-nav-logo</component>
+                    <img src="img/sidebar-logo.png" alt="Admin">
+                    <span class="logo-text">
+                        <small>
+                            <b>Xolvo</b> Royal Dashboard
+                        </small>
+                    </span>
+                </li>
+<!--
+                <li class="sidebar-nav-profile mini">
+                    <div class="profile-right">
+                        <span class="name">
+                            <span profile-toggler></span>
+                        </span>
+                        <span class="info">
+                            Project Manager
+                        </span>
+                    </div>
+                </li>
+-->
+                <!-- Profile settings -->
+<!--                <li class="side-nav-profile-settings" style="display: none;">
+                    <ul class="inline-list">
+                        <li>
+                            <a class="btn btn-white-hover"
+                               data-placement="top" 
+                               data-toggle="tooltip"
+                               data-original-title="Log out"
+                               href="#">
+                                <i class="fa fa-sign-out l-pad-5"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+-->
+                <!-- / Profile settings -->
+            </ul>
+            <ul id="side-nav" class="side-nav nav" metis-menu>
+                <li class="side-nav-group">
+                    <span class="name">Options</span>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="index.dashboard">
+                        <i class="fa fa-cube"></i> 
+                        <span class="nav-label">Dashboard</span> 
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="index.registerBankAccounts">
+                        <i class="fa fa-laptop"></i> 
+                        <span class="nav-label">Add Bank Accounts</span>
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="index.listTransactions">
+                        <i class="fa fa-diamond"></i> 
+                        <span class="nav-label">View Transactions</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</nav>

@@ -1,0 +1,12 @@
+<div class="row">
+    <!--<div ng-hide="waiting" class="panel-loading spinner round">
+    </div>-->
+    <div ng-hide="waiting" style="height:800px">
+      <span class="panel-loading spinner round" style="position: absolute;display: block;top: 30%;left: 50%;"></span>
+    </div>
+    <div ng-hide="hideAlert" class="alert alert-danger">
+    	Error processing the request. [Add more details here]
+    </div>
+    <div ng-bind-html="dynamicIFrame" class="col-lg-12">
+    </div>
+</div>

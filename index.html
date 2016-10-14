@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="royal-web-dashboard">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include the title -->
+    <title page-title>Royal Dashboard</title>
+    
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- / Fonts -->
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/vendor/pace-theme-minimal.css">
+    <link rel="stylesheet" href="styles/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/vendor/metisMenu.min.css">
+    <link rel="stylesheet" href="styles/vendor/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/style.min.css">
+    <!-- Themes -->
+    <link rel="stylesheet" href="styles/themes/theme-all.min.css">
+    <!-- / Style Sheets -->
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="styles/vendor/toastr.min.css">
+    <link rel="stylesheet" href="styles/login.min.css">
+    <!-- / Style Sheets -->
+
+    <!-- Datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-datatables/0.5.4/css/angular-datatables.min.css">        
+
+    <!-- Segment -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+      analytics.load("3kBdOErqoCOsfN3Vy6mx2hvP1B5d2Cva");
+//      analytics.page()
+      }}();
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBCkx6VXBH3trYoUKWYe7VLhRacoczfNig",
+        authDomain: "royal-web-dashboard.firebaseapp.com",
+        databaseURL: "https://royal-web-dashboard.firebaseio.com",
+        storageBucket: "",
+        messagingSenderId: "68964558454"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body data-theme="default">
+
+    <!-- Main view  -->
+    <div ui-view></div>
+    
+    <!-- Scroll up -->
+    <a href="#" class="fa scrollup"></a>   
+    <!-- / Scroll up -->
+    
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/pace.min.js"></script>
+    <script src="js/vendor/metisMenu.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/vendor/jquery.peity.min.js"></script>
+    <script src="js/vendor/index.js"></script>
+    <script src="js/vendor/Chart.min.js"></script>
+
+    <!-- / Scripts -->
+    
+    <!-- Angular Scripts-->
+    <script src="js/vendor/angular/angular.min.js"></script>
+    <script src="js/vendor/angular-ui-router/angular-ui-router.min.js"></script>
+
+    <!-- AngularFire -->
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+    
+    <!-- Angular App Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/directives.js"></script>
+    <!-- <script src="js/controllers.js"></script> -->
+
+    <script src="js/controllers/loginController.js"></script>
+    <script src="js/controllers/registerController.js"></script>
+    <script src="js/controllers/forgotPasswordController.js"></script>
+    <script src="js/controllers/dashboardController.js"></script>
+    <script src="js/controllers/clientsController.js"></script>
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/controllers/missingDocumentsController.js"></script>
+    <script src="js/controllers/allDocumentsController.js"></script>
+    <script src="js/controllers/listTransactionsController.js"></script>
+    <script src="js/controllers/registerBankAccountsController.js"></script>
+
+    <!-- Scripts for dashboard -->
+    <script src="js/loremizer.js"></script>
+    <script src="js/panels.js"></script>
+    <script src="js/deepassword.js"></script>
+    <script src="js/demo/demo.js"></script>
+
+    <script src="js/vendor/toastr.min.js"></script>
+    <script src="js/vendor/jquery.slimscroll.min.js"></script>
+
+    <script src="js/vendor/lodash.min.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+ 
+                
+    <!--<script src="js/demo/demo-dashboard.js"></script>-->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- End scripts for dashboard -->
+  
+    <!-- Angular Datatables -->
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-datatables/0.5.4/angular-datatables.js"></script>
+    <!-- End Angular Datatables -->
+
+    <script src="js/vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    
+</body>
+</html>

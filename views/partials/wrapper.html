@@ -1,0 +1,29 @@
+<!-- Wrapper-->
+<div id="wrapper">
+
+    <!-- Sidebar Navigation -->
+    <div ng-include="'views/partials/sidebar-nav.html'"></div>
+    
+    <!-- Container wraper -->
+    <div id="container-wrapper" class="container-wrapper" state-name="{{$state.current.name}}">
+        
+        <!-- Container Navigation -->
+        <div ng-include="'views/partials/container-navbar.html'"></div>
+
+        <!-- Header -->
+        <div ng-include="'views/partials/container-header.html'"></div>
+        
+        <!-- Breadcrumb -->
+        <div ng-include="'views/partials/container-breadcrumb.html'"></div>
+
+        <!-- Main view -->
+        <div id="container-content" class="container-content" ui-view></div>
+
+        <!-- Footer -->
+        <div ng-include="'views/partials/container-footer.html'"></div>
+
+    </div>
+    <!-- End container wrapper-->
+
+</div>
+<!-- End wrapper-->
